@@ -1,2 +1,3 @@
 # group9-hw-JUCE-CAPR
-Repository for the JUCE homework 
+Group 9 repository for the JUCE homework of CMLS 2022.
+
