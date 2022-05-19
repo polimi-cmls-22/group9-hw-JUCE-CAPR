@@ -56,9 +56,6 @@ The synth can be used in two modalities: as a classic VST synthesizer or connect
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Images
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Usage
 ### Fractal Window
 ![Main Menu](https://user-images.githubusercontent.com/51057211/169401448-8dc7afb9-c972-4edd-9cad-b2ffd8fe2ee2.png)
