@@ -23,7 +23,7 @@ OscComponent::OscComponent(juce::AudioProcessorValueTreeState& apvts,
         fmDepth("FM Depth", fmDepthId, apvts, dialWidth, dialHeight)
 {
     //OSC
-    if (!connect(port)) showConnectionErrorMessage("Error: could not connect to UDP port 7000.");
+    if (!connect(port)) showConnectionErrorMessage("Error: could not connect to UDP port");
     addListener(this, fmOSCAddressPattern);
     OSCAddressPattern = fmOSCAddressPattern;
 

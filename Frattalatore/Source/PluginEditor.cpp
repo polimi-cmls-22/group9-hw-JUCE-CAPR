@@ -8,7 +8,6 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
-
 //==============================================================================
 FrattalatoreAudioProcessorEditor::FrattalatoreAudioProcessorEditor (FrattalatoreAudioProcessor& p):
     AudioProcessorEditor (&p),
@@ -24,24 +23,6 @@ FrattalatoreAudioProcessorEditor::FrattalatoreAudioProcessorEditor (Frattalatore
     lfo(audioProcessor.apvts, "LFOFREQ", "LFODEPTH")
 
 {
-    int bg = 1;
-    switch (bg)
-    {
-    case 1:
-        backgroundImage = juce::ImageCache::getFromMemory(BinaryData::burningShipBackgroundImg_png, BinaryData::burningShipBackgroundImg_pngSize).rescaled(900, 600 - 120);
-        break;
-    case 2:
-        backgroundImage = juce::ImageCache::getFromMemory(BinaryData::JuliaBackgroundImg1_png, BinaryData::JuliaBackgroundImg1_pngSize).rescaled(900, 600 - 120);
-        break;
-    case 3 : 
-        backgroundImage = juce::ImageCache::getFromMemory(BinaryData::JuliaBackgroundImg2_png, BinaryData::JuliaBackgroundImg2_pngSize).rescaled(900, 600 - 120);
-        break;
-    case 4 : 
-        backgroundImage = juce::ImageCache::getFromMemory(BinaryData::mandelbrotBackgroundImg_png, BinaryData::mandelbrotBackgroundImg_pngSize).rescaled(900, 600 - 120);
-        break;
-    default: backgroundImage = juce::ImageCache::getFromMemory(BinaryData::burningShipBackgroundImg_png, BinaryData::burningShipBackgroundImg_pngSize).rescaled(900, 600 - 120);
-    }
-
     logoCapr = juce::ImageCache::getFromMemory(BinaryData::LOGO_Capr_png, BinaryData::LOGO_Capr_pngSize);
     logoCapr = logoCapr.rescaled(160, 160);
 
@@ -97,15 +78,15 @@ FrattalatoreAudioProcessorEditor::~FrattalatoreAudioProcessorEditor()
 //==============================================================================
 void FrattalatoreAudioProcessorEditor::paint(juce::Graphics& g)
 {
-    // (Our component is opaque, so we must completely fill the background with a solid colour
-   // g.fillAll(juce::Colours::black);
+
+ //   g.fillAll(juce::Colours::black);
     g.setOpacity(0.4f);
+    backgroundImage = juce::ImageCache::getFromMemory(BinaryData::mandelbrotBackgroundImg_png, BinaryData::mandelbrotBackgroundImg_pngSize).rescaled(900, 600 - 120);
     g.drawImageAt(backgroundImage,0,0);
     g.setOpacity(1.0f);
     g.drawImageAt(logoCapr, getWidth() / 2.0 - 90, getHeight() / 2.0);
 
    
-
     juce::Rectangle<float> border(0, 0, getWidth(), getHeight() - keyboardComponent.getHeight());
     g.setColour(juce::Colours::darkslategrey);
     g.drawRoundedRectangle(border, 8.0f, 5.0f);
@@ -146,4 +127,5 @@ void FrattalatoreAudioProcessorEditor::timerCallback()
     keyboardComponent.grabKeyboardFocus();
     stopTimer();
 }
+
 

@@ -30,12 +30,14 @@ int main()
     osc::OutboundPacketStream p3(buffer, OUTPUT_BUFFER_SIZE);
     osc::OutboundPacketStream p4(buffer, OUTPUT_BUFFER_SIZE);
     osc::OutboundPacketStream p5(buffer, OUTPUT_BUFFER_SIZE);
+    osc::OutboundPacketStream p6(buffer, OUTPUT_BUFFER_SIZE);
 
     UdpTransmitSocket transmitSocket1(IpEndpointName(ADDRESS, 7000));
     UdpTransmitSocket transmitSocket2(IpEndpointName(ADDRESS, 7001));
     UdpTransmitSocket transmitSocket3(IpEndpointName(ADDRESS, 7002));
     UdpTransmitSocket transmitSocket4(IpEndpointName(ADDRESS, 7003));
     UdpTransmitSocket transmitSocket5(IpEndpointName(ADDRESS, 7004));
+    UdpTransmitSocket transmitSocket6(IpEndpointName(ADDRESS, 7005));
 
     // Create the main window
     RenderWindow menu(VideoMode(800, 400), "Main Menu", Style::Default);
@@ -158,6 +160,10 @@ int main()
                                            XoscToSend = arrayOSC.calcoloMandelbrot(xNew, yNew, 5, iter)[0].x;
                                            YoscToSend = arrayOSC.calcoloMandelbrot(xNew, yNew, 5, iter)[0].y;
                                            nIterationToSend = arrayOSC.calcoloMandelbrot(xNew, yNew, 5, iter)[0].numeroIterazioni;
+                                           p5.Clear();
+                                           p5 << osc::BeginMessage("/juce/background")
+                                               << 1 << osc::EndMessage;
+                                           transmitSocket6.Send(p5.Data(), p5.Size());
 
                                            p1.Clear();
                                            p1 << osc::BeginMessage("/juce/osc1")
@@ -303,6 +309,11 @@ int main()
                                           YoscToSend = arrayOSC.calcoloJuliaSet1(xNew, yNew, 5, iter)[0].y;
                                           nIterationToSend = arrayOSC.calcoloJuliaSet1(xNew, yNew, 5, iter)[0].numeroIterazioni;
 
+                                          p5.Clear();
+                                          p5 << osc::BeginMessage("/juce/background")
+                                              << 2 << osc::EndMessage;
+                                          transmitSocket6.Send(p5.Data(), p5.Size());
+
                                           p1.Clear();
                                           p1 << osc::BeginMessage("/juce/osc1")
                                               << iter << nIterationToSend << (float)XoscToSend << (float)YoscToSend << osc::EndMessage;
@@ -443,6 +454,11 @@ int main()
                                           XoscToSend = arrayOSC.calcoloJuliaSet2(xNew, yNew, 5, iter)[0].x;
                                           YoscToSend = arrayOSC.calcoloJuliaSet2(xNew, yNew, 5, iter)[0].y;
                                           nIterationToSend = arrayOSC.calcoloJuliaSet2(xNew, yNew, 5, iter)[0].numeroIterazioni;
+
+                                          p5.Clear();
+                                          p5 << osc::BeginMessage("/juce/background")
+                                              << 3 << osc::EndMessage;
+                                          transmitSocket6.Send(p5.Data(), p5.Size());
 
                                           p1.Clear();
                                           p1 << osc::BeginMessage("/juce/osc1")
@@ -585,6 +601,11 @@ int main()
                                           XoscToSend = arrayOSC.calcoloBurninhShip(xNew, yNew, 5, iter)[0].x;
                                           YoscToSend = arrayOSC.calcoloBurninhShip(xNew, yNew, 5, iter)[0].y;
                                           nIterationToSend = arrayOSC.calcoloBurninhShip(xNew, yNew, 5, iter)[0].numeroIterazioni;
+
+                                          p5.Clear();
+                                          p5 << osc::BeginMessage("/juce/background")
+                                              << 4 << osc::EndMessage;
+                                          transmitSocket6.Send(p5.Data(), p5.Size());
 
                                           p1.Clear();
                                           p1 << osc::BeginMessage("/juce/osc1")
