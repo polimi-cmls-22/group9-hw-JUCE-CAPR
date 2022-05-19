@@ -36,7 +36,7 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloMandelbrot(d
         //push into array di elementi con relativo numero di ricorsioni
         threeValuesArray.push_back({ parteRealeZ,parteImmaginariaZ, numeroRicorsioniperelemento });
         
-        std::cout << "numero ricorsioni per elemento: " << numeroRicorsioniperelemento << std::endl;
+        //std::cout << "numero ricorsioni per elemento: " << numeroRicorsioniperelemento << std::endl;
     }
 
     //per stampare la lista delle coordinate
