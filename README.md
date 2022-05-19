@@ -87,7 +87,7 @@ Andres Bertazzi -
 Pierluigi Tartabini -
 Riccardo Martinelli - riccardo1.martinelli@mail.polimi.it
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [Frattalatore-CAPR](https://github.com/polimi-cmls-22/group9-hw-JUCE-CAPR)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
