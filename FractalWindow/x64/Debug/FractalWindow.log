@@ -7,54 +7,54 @@ C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWind
 C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\Fractal.h(32,22): warning C4244: 'return': conversione da 'const double' a 'int'. Possibile perdita di dati.
 C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\Fractal.h(37,27): warning C4244: 'return': conversione da 'double' a 'int'. Possibile perdita di dati.
 C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\Fractal.h(39,27): warning C4244: 'return': conversione da 'double' a 'int'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(44,55): warning C4244: 'argomento': conversione da 'T' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(42,55): warning C4244: 'argomento': conversione da 'T' a 'float'. Possibile perdita di dati.
           with
           [
               T=unsigned int
           ]
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(44,37): warning C4244: 'argomento': conversione da 'T' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(42,37): warning C4244: 'argomento': conversione da 'T' a 'float'. Possibile perdita di dati.
           with
           [
               T=unsigned int
           ]
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(160,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(161,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(173,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(174,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(182,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(183,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(191,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(192,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(200,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(201,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(308,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(309,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(322,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(323,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(331,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(332,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(340,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(341,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(349,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(350,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(454,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(455,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(468,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(469,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(477,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(478,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(486,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(487,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(495,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(496,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(601,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(602,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(615,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(616,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(624,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(625,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(633,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(634,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(642,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
-C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(643,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(158,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(159,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(167,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(168,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(176,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(177,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(185,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(186,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(194,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(195,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(302,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(303,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(311,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(312,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(320,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(321,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(329,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(330,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(338,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(339,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(443,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(444,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(452,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(453,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(461,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(462,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(470,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(471,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(479,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(480,105): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(585,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(586,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(594,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(595,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(603,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(604,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(612,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(613,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(621,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
+C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\main.cpp(622,107): warning C4244: '=': conversione da 'double' a 'float'. Possibile perdita di dati.
   FractalWindow.vcxproj -> C:\Users\claud\OneDrive\Desktop\Prova clone cmls\group9-hw-JUCE-CAPR\FractalWindow\x64\Debug\FractalWindow.exe
