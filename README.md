@@ -84,7 +84,7 @@ The synth can be used in two modalities: as a classic VST synthesizer or connect
 
 Claudio Eutizi - claudio.eutizi@mail.polimi.it
 Andres Bertazzi - andres.bertazzi@mail.polimi.it
-Pierluigi Tartabini -
+Pierluigi Tartabini - pierluigi.tartabni@mail.polimi.it
 Riccardo Martinelli - riccardo1.martinelli@mail.polimi.it
 
 Project Link: [Frattalatore-CAPR](https://github.com/polimi-cmls-22/group9-hw-JUCE-CAPR)
