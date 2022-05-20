@@ -6,7 +6,7 @@ class threeValuesArray
 {
     //threeValuesArray();
 
-    //couple of coordinates + number of iterations + fr_im_screen
+    //couple of coordinates + number of iterations
     struct threeValues
     {
         double x;

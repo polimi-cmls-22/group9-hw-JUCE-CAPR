@@ -14,13 +14,13 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloMandelbrot(d
 
     while (numeroRicorsioni < iterazioni_user) {
 
-        //calcolo elementi
+        //calculate elements
         double temp = parteRealeZ * parteRealeZ - parteImmaginariaZ * parteImmaginariaZ + cr;
         parteImmaginariaZ = 2.0 * parteRealeZ * parteImmaginariaZ + ci;
         parteRealeZ = temp;
         numeroRicorsioni++;
 
-        //calcolo numero di ricorsioni per elemento
+        //calculate number of iterations for each element
         double parteRealeZ1 = 0, parteImmaginariaZ1 = 0;
         int cr1 = parteRealeZ;
         int ci1 = parteImmaginariaZ;
@@ -33,16 +33,8 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloMandelbrot(d
             numeroRicorsioniperelemento++;
         }
         
-        //push into array di elementi con relativo numero di ricorsioni
+        //push into array of elements with its number of iterations
         threeValuesArray.push_back({ parteRealeZ,parteImmaginariaZ, numeroRicorsioniperelemento });
-        
-        //std::cout << "numero ricorsioni per elemento: " << numeroRicorsioniperelemento << std::endl;
-    }
-
-    //per stampare la lista delle coordinate
-    for (int i = 0; i < threeValuesArray.size(); i++)
-    {
-        std::cout << "(x_m): " << threeValuesArray[i].x << " (y_m): " << threeValuesArray[i].y << " Ricorsioni: " << threeValuesArray[i].numeroIterazioni << std::endl;
     }
 
     return threeValuesArray;
@@ -50,12 +42,12 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloMandelbrot(d
 
 std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloJuliaSet1(double cr, double ci, int iterazioni_user, int bellaiterazione)
 {
-    double parteRealeC = -0.7269, parteImmaginariaC = 0.1889; // costante c di partenza del set
+    double parteRealeC = -0.7269, parteImmaginariaC = 0.1889; // starting c constant of the set
     int numeroRicorsioni = 0;
     
     std::vector <threeValues> threeValuesArray;
 
-    //calcolo numero di ricorsioni per primo elemento
+    //number of iterations for the first element
     int numeroRicorsioni_first = 0;
     int cr0 = cr;
     int ci0 = ci;
@@ -70,9 +62,7 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloJuliaSet1(do
    
     threeValuesArray.push_back({ cr,ci,numeroRicorsioni_first });
     
-    std::cout << "numero ricorsioni per elemento: " << numeroRicorsioni_first << std::endl;
-
-    //calcolo elementi
+    //calculate elements
     while (numeroRicorsioni < iterazioni_user - 1)
     {
         double tempX = cr * cr - ci * ci + parteRealeC;
@@ -81,7 +71,7 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloJuliaSet1(do
         ci = tempY;
         numeroRicorsioni++;
 
-        //calcolo numero di ricorsioni per elemento
+        //calculate number of iterations for each element
         int cr1 = cr;
         int ci1 = ci;
         int numeroRicorsioniperelemento = 0;
@@ -94,17 +84,9 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloJuliaSet1(do
             numeroRicorsioniperelemento++;
         }
         
-        //push into array di elementi con relativo numero di ricorsioni
+        //push into array of elements with its number of iterations
         threeValuesArray.push_back({ cr,ci, numeroRicorsioniperelemento });
-        
-        std::cout << "numero ricorsioni per elemento: " << numeroRicorsioniperelemento << std::endl;
 
-    }
-
-    //per stampare la lista delle coordinate
-    for (int i = 0; i < threeValuesArray.size(); i++)
-    {
-        std::cout << "(x_j1): " << threeValuesArray[i].x << " (y_j1): " << threeValuesArray[i].y << " Ricorsioni: " << threeValuesArray[i].numeroIterazioni << std::endl;
     }
 
     return threeValuesArray;
@@ -112,12 +94,12 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloJuliaSet1(do
 
 std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloJuliaSet2(double cr, double ci, int iterazioni_user, int bellaiterazione)
 {
-    double parteRealeC = 0.285, parteImmaginariaC = 0.01; // costante c di partenza del set
+    double parteRealeC = 0.285, parteImmaginariaC = 0.01; // starting c constant of the set
     int numeroRicorsioni = 0;
     
     std::vector <threeValues> threeValuesArray;
 
-    //calcolo numero di ricorsioni per primo elemento
+    //number of iterations for the first element
     int numeroRicorsioni_first = 0;
     int cr0 = cr;
     int ci0 = ci;
@@ -131,9 +113,7 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloJuliaSet2(do
     }
     threeValuesArray.push_back({ cr,ci,numeroRicorsioni_first });
     
-    std::cout << "numero ricorsioni per elemento: " << numeroRicorsioni_first << std::endl;
-
-    //calcolo elementi
+    //calculate elements
     while (numeroRicorsioni < iterazioni_user - 1)
     {
         double tempX = cr * cr - ci * ci + parteRealeC;
@@ -142,7 +122,7 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloJuliaSet2(do
         ci = tempY;
         numeroRicorsioni++;
 
-        //calcolo numero di ricorsioni per elemento
+        //calculate number of iterations for each element
         int cr1 = cr;
         int ci1 = ci;
         int numeroRicorsioniperelemento = 0;
@@ -154,17 +134,9 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloJuliaSet2(do
             ci1 = tempY;
             numeroRicorsioniperelemento++;
         }
-        //push into array di elementi con relativo numero di ricorsioni
+        //push into array of elements with its number of iterations
         threeValuesArray.push_back({ cr,ci, numeroRicorsioniperelemento });
-        
-        std::cout << "numero ricorsioni per elemento: " << numeroRicorsioniperelemento << std::endl;
-
-    }
-
-    //per stampare la lista delle coordinate
-    for (int i = 0; i < threeValuesArray.size(); i++)
-    {
-        std::cout << "(x_j2): " << threeValuesArray[i].x << " (y_j2): " << threeValuesArray[i].y << " Ricorsioni: " << threeValuesArray[i].numeroIterazioni<< std::endl;
+ 
     }
 
     return threeValuesArray;
@@ -180,13 +152,13 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloBurninhShip(
 
     while (numeroRicorsioni < iterazioni_user) {
 
-        //calcolo elementi
+        //calculate elements
         double temp = parteRealeZ * parteRealeZ - parteImmaginariaZ * parteImmaginariaZ + cr;
         parteImmaginariaZ = 2.0 * abs(parteRealeZ * parteImmaginariaZ) + ci;
         parteRealeZ = temp;
         numeroRicorsioni++;
         
-        //calcolo numero di ricorsioni per elemento
+        //calculate number of iterations for each element
         double parteRealeZ1 = 0, parteImmaginariaZ1 = 0;
         int cr1 = parteRealeZ;
         int ci1 = parteImmaginariaZ;
@@ -199,19 +171,9 @@ std::vector<threeValuesArray::threeValues> threeValuesArray::calcoloBurninhShip(
             numeroRicorsioniperelemento++;
         }
         
-        //push into array di elementi con relativo numero di ricorsioni
+        //push into array of elements with its number of iterations
         threeValuesArray.push_back({ parteRealeZ,parteImmaginariaZ, numeroRicorsioniperelemento });
         
-        std::cout << "numero ricorsioni per elemento: " << numeroRicorsioniperelemento << std::endl;
-    }
-
-     //per stampare la lista delle coordinate
-    for (int i = 0; i < threeValuesArray.size(); i++)
-    {
-        std::cout << "(x_bs): " << threeValuesArray[i].x << " (y_bs): " << threeValuesArray[i].y << " Ricorsioni: " << threeValuesArray[i].numeroIterazioni << std::endl;
-    } 
-  
-
     return threeValuesArray;
 }
 

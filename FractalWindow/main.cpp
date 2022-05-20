@@ -14,8 +14,8 @@ using namespace sf;
 
 double zoom = 1.0;
 double step = 20.0;
-//static 
 
+//static variables
 static int x_fp = 0;
 static int y_fp = 0;
 float XoscToSend;
@@ -139,19 +139,11 @@ int main()
                                       MandelFractal.setYfp(mouse_pos.y);
 
                                       if (MandelFractal.getXfp() > MandelFractal.getW() || MandelFractal.getYfp() > MandelFractal.getH() || MandelFractal.getXfp() < 0 || MandelFractal.getYfp() < 0)
-                                      {
-                                          cout << "prendi un un punto appartenente alla window;";
-                                      }
                                       
                                       else
                                       {
-                                          //cout << "le coordinate del punto scelto sono: " << "x :" << MandelFractal.getXfp() << " y: " << MandelFractal.getYfp() << endl;
                                           xNew = modifier.nuovaCoordinataX(MandelFractal.getXfp());
                                           yNew = modifier.nuovaCoordinataY(MandelFractal.getYfp());
-
-                                          //cout << " la nuova coordinata x e :" << xNew << endl;
-
-                                          //cout << " la nuova coordinata y e :" << yNew << endl;
 
                                           arrayOSC.calcoloMandelbrot(xNew, yNew, 5, iter);
 
@@ -198,7 +190,7 @@ int main()
                                            p5 << osc::BeginMessage("/juce/osc5")
                                                << iter <<nIterationToSend << (float)XoscToSend << (float)YoscToSend << osc::EndMessage;
                                            transmitSocket5.Send(p5.Data(), p5.Size());
-                                          //arrayOSC.calcoloMandelbrot(xNew, yNew, 5)[i].perc
+
                                       }
                                   }
                               }
@@ -214,13 +206,13 @@ int main()
                                           {
                                               newIter = iter*2;
                                               iter = newIter;
-                                              cout << "newIter +: "<< iter;
+                                              cout << "New max iterations: "<< iter <<endl;
                                           }
                                           else
                                           {
                                               newIter = iter /2;
                                               iter = newIter;
-                                              cout << "newIter -: "<< iter;
+                                              cout << "New max iterations: "<< iter <<endl;
                                           
                                               if(iter < 1) iter = 1;
                                           }
@@ -283,19 +275,11 @@ int main()
                                       julia1Fractal.setYfp(mouse_pos.y);
 
                                       if (julia1Fractal.getXfp() > julia1Fractal.getW() || julia1Fractal.getYfp() > julia1Fractal.getH() || julia1Fractal.getXfp() < 0 || julia1Fractal.getYfp() < 0)
-                                      {
-                                          cout << "prendi un un punto appartenente alla window;";
-                                      }
-                                      
+
                                       else
                                       {
-                                          //cout << "le coordinate del punto scelto sono: " << "x :" << julia1Fractal.getXfp() << " y: " << julia1Fractal.getYfp() << endl;
                                           xNew = modifier.nuovaCoordinataX(julia1Fractal.getXfp());
                                           yNew = modifier.nuovaCoordinataY(julia1Fractal.getYfp());
-
-                                          //cout << " la nuova coordinata x e :" << xNew << endl;
-
-                                          //cout << " la nuova coordinata y e :" << yNew << endl;
 
                                           arrayOSC.calcoloJuliaSet1(xNew, yNew, 5, iter);
 
@@ -358,13 +342,13 @@ int main()
                                           {
                                               newIter = iter*2;
                                               iter = newIter;
-                                              cout << "newIter +: "<< iter;
+                                              cout << "New max iterations: "<< iter <<endl;
                                           }
                                           else
                                           {
                                               newIter = iter /2;
                                               iter = newIter;
-                                              cout << "newIter -: "<< iter;
+                                              cout << "New max iterations: "<< iter <<endl;
                                           
                                               if(iter < 1) iter = 1;
                                           }
@@ -424,19 +408,12 @@ int main()
                                       julia2Fractal.setYfp(mouse_pos.y);
 
                                       if (julia2Fractal.getXfp() > julia2Fractal.getW() || julia2Fractal.getYfp() > julia2Fractal.getH() || julia2Fractal.getXfp() < 0 || julia2Fractal.getYfp() < 0)
-                                      {
-                                          cout << "prendi un un punto appartenente alla window;";
-                                      }
-                                      
+
                                       else
                                       {
-                                          //cout << "le coordinate del punto scelto sono: " << "x :" << julia2Fractal.getXfp() << " y: " << julia2Fractal.getYfp() << endl;
+
                                           xNew = modifier.nuovaCoordinataX(julia2Fractal.getXfp());
                                           yNew = modifier.nuovaCoordinataY(julia2Fractal.getYfp());
-
-                                          //cout << " la nuova coordinata x e :" << xNew << endl;
-
-                                          //cout << " la nuova coordinata y e :" << yNew << endl;
 
                                           arrayOSC.calcoloJuliaSet2(xNew, yNew, 5, iter);
 
@@ -499,13 +476,13 @@ int main()
                                           {
                                               newIter = iter*2;
                                               iter = newIter;
-                                              cout << "newIter +: "<< iter;
+                                              cout << "New max iterations: "<< iter <<endl;
                                           }
                                           else
                                           {
                                               newIter = iter /2;
                                               iter = newIter;
-                                              cout << "newIter -: "<< iter;
+                                              cout << "New max iterations: "<< iter <<endl;
                                           
                                               if(iter < 1) iter = 1;
                                           }
@@ -566,19 +543,11 @@ int main()
                                       burningFractal.setYfp(mouse_pos.y);
 
                                       if (burningFractal.getXfp() > burningFractal.getW() || burningFractal.getYfp() > burningFractal.getH() || burningFractal.getXfp() < 0 || burningFractal.getYfp() < 0)
-                                      {
-                                          cout << "prendi un un punto appartenente alla window;";
-                                      }
-                                      
+                                     
                                       else
                                       {
-                                          cout << "le coordinate del punto scelto sono: " << "x :" << burningFractal.getXfp() << " y: " << burningFractal.getYfp() << endl;
                                           xNew = modifier.nuovaCoordinataX(burningFractal.getXfp());
                                           yNew = modifier.nuovaCoordinataY(burningFractal.getYfp());
-
-                                          cout << " la nuova coordinata x e :" << xNew << endl;
-
-                                          cout << " la nuova coordinata y e :" << yNew << endl;
 
                                           arrayOSC.calcoloBurninhShip(xNew, yNew, 5, iter);
 
@@ -627,82 +596,6 @@ int main()
                                           transmitSocket5.Send(p5.Data(), p5.Size());
                                       }
                                   }
-                                  //move image with keyboard arrows
-
-                                  if (burningEvent.key.code == Keyboard::Left)
-                                  {
-                                      double tempXMin = 0;
-                                      double tempXMax = 0;
-                                      cout << " sposoto l immagine a sinistra";
-                                      tempXMin = (burningFractal.getMinRe() - modifier.get_w());
-                                      tempXMax = (burningFractal.getMaxRe() - modifier.get_w());
-                                      burningFractal.setMinRe(tempXMin);
-                                      burningFractal.setMaxRe(tempXMax);
-
-                                      //min_re -= w, max_re -= w;
-                                      
-                                      burningFractal.setXfp(xNew - modifier.get_w());
-                                      //xPoint -= w;
-                                      cout << " coeff traslazione: " << modifier.get_w() << " la coordinata traslata e: " << xNew << endl;
-
-                                  }
-                                  /* if (burningEvent.key.code == Keyboard::Right)
-                                  {
-                                      min_re += w, max_re += w;
-                                      xPoint += w;
-                                      cout << " coeff traslazione: " << w << " la coordinata traslata e: " << xPoint << endl;
-                                  }
-                                  if (burningEvent.key.code == Keyboard::Up)
-                                  {
-                                      min_im -= h, max_im -= h;
-                                      yPoint -= h;
-                                      cout << " coeff traslazione: " << h << " la coordinata traslata e: " << yPoint << endl;
-                                  }
-                                  if (burningEvent.key.code == Keyboard::Down)
-                                  {
-                                      min_im += h, max_im += h;
-                                      yPoint += h;
-                                      cout << " coeff traslazione: " << h << " la coordinata traslata e: " << yPoint << endl;
-                                  }*/
-                              }
-                          
-                             else if (burningEvent.type == Event::MouseButtonPressed)
-                              {
-                                  auto zoom_x = [&](double z)
-                                  {
-                                      //mouse point will be new center point
-                                      double cr = (burningFractal.getMinRe() + (static_cast<double>(burningFractal.getMaxRe()) - burningFractal.getMinRe()) * burningEvent.mouseButton.x / burningFractal.getW());
-                                      double ci = (burningFractal.getMinIm() + (static_cast<double>(burningFractal.getMaxIm()) - burningFractal.getMinIm()) * burningEvent.mouseButton.y / burningFractal.getH());
-                                      
-                                      cout << " cr: " << cr;
-                                      cout << " ci: " << ci;
-                                 
-                                      //zoom
-                                      double tminr = cr - (static_cast<double>(burningFractal.getMaxRe()) - burningFractal.getMinRe()) / 2 / z;
-                                      burningFractal.setMaxRe(cr + (static_cast<double>(burningFractal.getMaxRe()) - burningFractal.getMinRe()) / 2 / z);
-                                      burningFractal.setMinRe(tminr);
-                                      double tmini = ci - (static_cast<double>(burningFractal.getMaxIm()) - burningFractal.getMinIm()) / 2 / z;
-                                      burningFractal.setMaxIm(ci + (static_cast<double>(burningFractal.getMaxIm()) - burningFractal.getMinIm()) / 2 / z);
-                                      burningFractal.setMinIm(tmini);
-
-                                  };
-                                  if (burningEvent.mouseButton.button == Mouse::Left)
-                                  {
-                                      cout << "click mouse sisnito";
-                                      zoom_x(2);
-                                      zoom *= 2;
-                                      modifier.set_w((burningFractal.getMaxRe() - burningFractal.getMinRe()) * step / burningFractal.getW());
-                                      modifier.set_h((burningFractal.getMaxIm() - burningFractal.getMinIm()) * step / burningFractal.getH());
-                                  }
-                                  if (burningEvent.mouseButton.button == Mouse::Right)
-                                  {
-                                      cout << "click mouse destro";
-                                      zoom_x(1.0 / 2);
-                                      zoom /= 2;
-                                      modifier.set_w((burningFractal.getMaxRe() - burningFractal.getMinRe()) * step / burningFractal.getW());
-                                      modifier.set_h((burningFractal.getMaxIm() - burningFractal.getMinIm()) * step / burningFractal.getH());
-                                  }
-                              }
                               
                               else if (burningEvent.type == Event::MouseWheelScrolled)
                               {
@@ -715,13 +608,13 @@ int main()
                                           {
                                               newIter = iter*2;
                                               iter = newIter;
-                                              cout << "newIter +: "<< iter;
+                                              cout << "New max iterations: "<< iter <<endl;
                                           }
                                           else
                                           {
                                               newIter = iter /2;
                                               iter = newIter;
-                                              cout << "newIter -: "<< iter;
+                                              cout << "New max iterations: "<< iter <<endl;
                                           
                                               if(iter < 1) iter = 1;
                                           }
