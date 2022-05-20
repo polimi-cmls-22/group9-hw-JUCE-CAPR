@@ -14,7 +14,7 @@ using namespace sf;
 
 double zoom = 1.0;
 double step = 20.0;
-//static variables
+//static 
 
 static int x_fp = 0;
 static int y_fp = 0;
