@@ -83,7 +83,7 @@ The synth can be used in two modalities: as a classic VST synthesizer or connect
 ## Contact
 
 Claudio Eutizi - claudio.eutizi@mail.polimi.it
-Andres Bertazzi - 
+Andres Bertazzi - andres.bertazzi@mail.polimi.it
 Pierluigi Tartabini -
 Riccardo Martinelli - riccardo1.martinelli@mail.polimi.it
 
